@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,11 +8,145 @@
     <title>Concours Evolusound 2025</title>
     <link rel="icon" type="image/x-icon" href="/img/Logo_evolusound_carré.png">
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: "Neue Machina";
+            src: url("/font/neuemachina-regular.otf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Neue Machina";
+        }
+
+        body {
+            font-family: "Neue Machina", sans-serif;
+            line-height: 1.6;
+            color: #003882;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(206, 206, 206);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header #img1 {
+            max-width: 200px;
+            margin: 0 10px;
+        }
+
+        .header #img2 {
+            max-width: 300px;
+            margin: 0 10px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* Section Styling */
+        .section {
+            background: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #003882;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section .content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .section .content a {
+            display: inline-block;
+            color: #831f84;
+        }
+
+        /* Social Media Links */
+        .social-links {
+            margin-top: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #1e1e2d;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #831f84;
+        }
+
+        /* Responsive Grid for Logos */
+        .logo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 100px;
+            background-color: rgb(206, 206, 206);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            .header img {
+                max-width: 100px;
+            }
+
+            .section .title {
+                font-size: 20px;
+            }
+
+            .section .content {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <img src="img/Logo_evolusound_carré.png" alt="" srcset="">
-        <img src="img/Logo_evolusound_texte.png" alt="" srcset="">
+        <img id="img1" src="img/Logo_evolusound_carré.png" alt="" srcset="">
+        <img id="img2" src="img/Logo_evolusound_texte.png" alt="" srcset="">
     </div>
     <div class="container">
         <div class="section">
@@ -32,7 +165,7 @@
                     Catégorie solo/duo
                     Catégorie groupe
 
-                    Pour s'inscrire, il suffit de remplir le google form d’inscription, dans lequel vous joindrez une vidéo de démonstration (extrait de performance, clip musical, vidéo de répétition…). 
+                    Pour s'inscrire, il suffit de remplir le <a href="https://forms.gle/dds6ZJ8uXnKvok6aA" target="_blank" rel="noopener noreferrer">google form d’inscription</a>, dans lequel vous joindrez une vidéo de démonstration (extrait de performance, clip musical, vidéo de répétition…). 
                     NB : La qualité de la vidéo ne sera pas déterminante pour la présélection, elle nous permet juste de savoir qui vous êtes et d'appréhender votre style :) 
 
                     Dans la semaine suivant la clôture des inscriptions, 1 candidature par école sera présélectionnée dans chaque catégorie pour participer au concert. 
@@ -41,7 +174,7 @@
 
                     N’hésitez pas à vous inscrire, le concours est ouvert à tous les niveaux d’expérience !
                 </p>
-                <a href="http://" target="_blank" rel="noopener noreferrer">Inscription</a>                
+                             
             </div>
         </div>
         <div class="section">
@@ -67,16 +200,25 @@
 
                     Evolusound recherche des sponsors pour aider à financer le projet, mais aussi pour récompenser les gagnants avec des lots intéressants !
 
-                    Pour plus d’informations, consultez notre plaquette entreprise : 
-                    <a href="http://" target="_blank" rel="noopener noreferrer">lien vers la plaquette RE</a>
+                    Pour plus d’informations, consultez notre <a href="http://" target="_blank" rel="noopener noreferrer">plaquette entreprise</a>
                 </p>
             </div>
         </div>
         <div class="section">
             <div class="title">Nous contacter</div>
-            <div class="content">concoursevolusound@gmail.com
-                lien insta : https://www.instagram.com/evolu_sound/
-                lien facebook : https://www.facebook.com/EvoluSound</div>
+            <div class="content">
+                <div class="social-links">
+                    <a href="mailto:concoursevolusound@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/evolu_sound/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/EvoluSound" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="section">
             <div class="logo">
